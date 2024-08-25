@@ -16,55 +16,94 @@
       <nav class="navbar">
         <!-- left -->
         <div class="container">
-          <div class="logo">Logo</div>
+          <div class="logo">I<span style="color: #4e9e53">Z</span>AM</div>
           <div class="search-container">
             <i class="fa fa-search search-icon"></i>
+
             <input type="text" class="search-input" placeholder="Search..." />
           </div>
         </div>
 
         <!-- right -->
-        <div class="container">
+        <div class="container" style="justify-content: end">
           <div class="nav-icons">
-            <a href="#" class="nav-icon"><i class="fa fa-home"></i></a>
-            <a href="#" class="nav-icon"><i class="fa fa-briefcase"></i></a>
-            <a href="#" class="nav-icon"><i class="fa fa-building"></i></a>
-            <a href="#" class="nav-icon"><i class="fa fa-bell"></i></a>
-            <a href="#" class="nav-icon"><i class="fa fa-envelope"></i></a>
-            <a href="#" class="profile-photo">
+            <a href="#" class="nav-icon"
+              ><i class="fa fa-home"></i><span>Home</span></a
+            >
+            <a href="#" class="nav-icon"
+              ><i class="fa fa-briefcase"></i><span>Jobs</span></a
+            >
+            <a href="#" class="nav-icon"
+              ><i class="fa fa-building"></i><span>Employers</span></a
+            >
+            <hr />
+            <a href="#" class="nav-icon"
+              ><i class="fa fa-bell"></i><span>Notifications</span></a
+            >
+            <a href="#" class="nav-icon"
+              ><i class="fa fa-envelope"></i><span>Messaging</span></a
+            >
+            <a href="#" class="profile-photo nav-icon">
               <img
                 src="https://t4.ftcdn.net/jpg/06/77/97/21/360_F_677972198_YWL97FgRrJE20ZNrf36LFGULuZccnxNT.jpg"
                 alt="Profile"
               />
+              <span>Profile</span>
             </a>
           </div>
         </div>
       </nav>
     </header>
     <main class="grid-container">
+      <span class="uil--setting"></span>
       <aside class="left-sidebar">
         <nav class="navbar-menu" id="navbar-menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropbtn">Services</a>
-              <div class="dropdown-content">
-                <a href="#">Web Design</a>
-                <a href="#">SEO</a>
-                <a href="#">Marketing</a>
+            <li><a href="#">Dashboard</a></li>
+            <li>
+              <div class="collaps">
+                <input type="checkbox" id="collapisble-jobs" />
+                <label for="collapisble-jobs"> Jobs Applications </label>
+                <ul class="collapisble-text">
+                  <li>hi</li>
+                  <li>hi</li>
+                  <li>hi</li>
+                </ul>
               </div>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+              <div class="collaps">
+                <input type="checkbox" id="collapisble-head" />
+                <label for="collapisble-head"> Companies </label>
+                <ul class="collapisble-text">
+                  <li>TanQeeb</li>
+                  <li>Daftra</li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="collaps">
+                <input type="checkbox" id="collapisble-Settings" />
+                <label for="collapisble-Settings"> Settings </label>
+                <ul class="collapisble-text">
+                  <li>Hi</li>
+                  <li>Hi</li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Logout</a></li>
           </ul>
         </nav>
       </aside>
       <section class="main-content">
-        <h1>Main Content</h1>
-        <p>
-          This is the main content area. It occupies the central part of the
-          layout.
-        </p>
+        <div class="collaps">
+          <input type="checkbox" id="collapisble-head" />
+          <label for="collapisble-head"> trigger </label>
+          <div class="collapisble-text">
+            <p>hddshjds</p>
+            <li>hdgd</li>
+          </div>
+        </div>
       </section>
       <aside class="right-sidebar">
         <h2>Right Sidebar</h2>
