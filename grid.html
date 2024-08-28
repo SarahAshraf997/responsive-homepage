@@ -6,7 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Dashboard</title>
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -119,55 +124,38 @@
         </aside>
       </div>
       <div class="card1">
-        <div class="collaps">
-          <input type="checkbox" id="collapisble-sidebar" />
-          <label for="collapisble-sidebar" style="padding-left: 10px">
-            Companies
-          </label>
-          <aside class="sidebar collapisble-text">
-            <div class="span-container">
-              <span class="solar--arrow-left-linear"></span>
-              <span class="uil--setting"></span>
-            </div>
+        <nav class="navbar">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checked">
+            <h2>Companies</h2>
+            <span
+              class="glyphicon glyphicon-menu-hamburger"
+              id="checkbox"
+            ></span
+          ></label>
+          <ul class="nav-links" style="display: block">
+            <input type="checkbox" id="check" />
+            <label for="check" style="width: 100%">
+              <div
+                class="span-container"
+                style="
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
+                <span class="solar--arrow-left-linear"></span>
+                <span class="uil--setting"></span>
+              </div>
+            </label>
 
-            <div class="sideelements">
-              <ul class="elements">
-                <li><a href="#">Dashboard</a></li>
-                <li class="list">
-                  <div class="collaps">
-                    <input type="checkbox" id="collapisble-jobs" />
-                    <label for="collapisble-jobs"> Jobs Applications </label>
-                    <ul class="collapisble-text">
-                      <li><a href="#">TanQeeb</a></li>
-                      <li><a href="#">Daftra</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="collaps">
-                    <input type="checkbox" id="collapisble-Companies" />
-                    <label for="collapisble-Companies"> Companies </label>
-                    <ul class="collapisble-text">
-                      <li><a href="#">c1</a></li>
-                      <li><a href="#">c2</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <div class="collaps">
-                    <input type="checkbox" id="collapisble-Settings" />
-                    <label for="collapisble-Settings"> Settings </label>
-                    <ul class="collapisble-text">
-                      <li><a href="#">S1</a></li>
-                      <li><a href="#">S2</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a href="#">Logout</a></li>
-              </ul>
-            </div>
-          </aside>
-        </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
       <div class="card2">
         <div class="job-overview">
